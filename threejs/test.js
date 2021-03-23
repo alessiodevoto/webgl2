@@ -271,8 +271,7 @@ function init()
 					});
 	mesh_clock2 = new THREE.Mesh( geometry_clock2, material_clock2);
 	scene.add( mesh_clock2);
-	var domEvents	= new THREEx.DomEvents(camera, renderer.domElement);
-	domEvents.addEventListener(mesh_clock2, 'click', melt2, false);
+	
 
 
 	//clock_background 1.2
@@ -1023,16 +1022,17 @@ function melt_mammoth1(){
 	melting = true;
 
 	var waveform = { amplitude:0.9, speed:0.15, wavelength:0.5, timeOffset:0 };
-	var meltAmount = 0.08;
-	var modelHeight = 10;
-	var spreadAmount = 1;
+	var meltAmount = 0.8;//var meltAmount = 0.08;
+	var modelHeight = 30;
+	var spreadAmount = 0.003; //	var spreadAmount = 1;
 	var poolThickness = 0.6;
-	var outwardSpeed = .06;
+	var outwardSpeed = .6;
 	var pushType = "Normals";
 	var noiseAmplitude = .1;
 	var noiseFrequency = .1;
 	var noiseOffset = 1;
-	var bbox = new THREE.Box3(new THREE.Vector3( 0, 0, 0 ), new THREE.Vector3( 5, 5, 5));
+	//var bbox = new THREE.Box3(new THREE.Vector3( 80, 80, 80 ), new THREE.Vector3( -20, -20, -20));
+	var bbox = new THREE.Box3(new THREE.Vector3( 0, 20, 0 ), new THREE.Vector3( 0, -1.8, 0));
 
 	
 
@@ -1076,16 +1076,17 @@ function melt_mammoth2(){
 	melting = true;
 
 	var waveform = { amplitude:0.9, speed:0.15, wavelength:0.5, timeOffset:0 };
-	var meltAmount = 0.08;
-	var modelHeight = 10;
-	var spreadAmount = 1;
+	var meltAmount = 0.8;//var meltAmount = 0.08;
+	var modelHeight = 30;
+	var spreadAmount = 0.003; //	var spreadAmount = 1;
 	var poolThickness = 0.6;
-	var outwardSpeed = .06;
+	var outwardSpeed = .6;
 	var pushType = "Normals";
 	var noiseAmplitude = .1;
 	var noiseFrequency = .1;
 	var noiseOffset = 1;
-	var bbox = new THREE.Box3(new THREE.Vector3( 0, 0, 0 ), new THREE.Vector3( 5, 5, 5));
+	//var bbox = new THREE.Box3(new THREE.Vector3( 80, 80, 80 ), new THREE.Vector3( -20, -20, -20));
+	var bbox = new THREE.Box3(new THREE.Vector3( 0, 20, 0 ), new THREE.Vector3( 0, -1.8, 0));
 	
 
 	var vertDist = bbox.max.y - bbox.min.y;
