@@ -1034,7 +1034,6 @@ function melt_mammoth1(){
 	//var bbox = new THREE.Box3(new THREE.Vector3( 80, 80, 80 ), new THREE.Vector3( -20, -20, -20));
 	var bbox = new THREE.Box3(new THREE.Vector3( 0, 20, 0 ), new THREE.Vector3( 0, -1.8, 0));
 
-	
 
 	var vertDist = bbox.max.y - bbox.min.y;
 	var generator = new Simple1DNoise();
@@ -1048,7 +1047,7 @@ function melt_mammoth1(){
 			//handle the points that are below the bbox min
 			if (position.z < bbox.min.y)
 			{
-				var fractionBelowBboxMin = (bbox.min.y-position.y)/(bbox.max.y-bbox.min.y);
+				var fractionBelowBboxMin = (bbox.min.y-position.z)/(bbox.max.y-bbox.min.y);
 
 				//generate a push vectorbased on the push type
 				var pushVector = 0;
@@ -1066,7 +1065,6 @@ function melt_mammoth1(){
 			}
 	    });
 		animations.push(vertexAnimation);
-		
 }
 
 function melt_mammoth2(){
