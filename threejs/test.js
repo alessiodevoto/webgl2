@@ -1023,16 +1023,17 @@ function melt_mammoth1(){
 	melting = true;
 
 	var waveform = { amplitude:0.9, speed:0.15, wavelength:0.5, timeOffset:0 };
-	var meltAmount = 0.3;//var meltAmount = 0.08;
-	var modelHeight = 30;
-	var spreadAmount = 0.3; //	var spreadAmount = 1;
+	var meltAmount = 0.08;
+	var modelHeight = 10;
+	var spreadAmount = 1;
 	var poolThickness = 0.6;
 	var outwardSpeed = .06;
 	var pushType = "Normals";
 	var noiseAmplitude = .1;
 	var noiseFrequency = .1;
 	var noiseOffset = 1;
-	var bbox = new THREE.Box3(new THREE.Vector3( 80, 80, 80 ), new THREE.Vector3( -20, -20, -20));
+	var bbox = new THREE.Box3(new THREE.Vector3( 0, 0, 0 ), new THREE.Vector3( 5, 5, 5));
+
 	
 
 	var vertDist = bbox.max.y - bbox.min.y;
@@ -1075,16 +1076,16 @@ function melt_mammoth2(){
 	melting = true;
 
 	var waveform = { amplitude:0.9, speed:0.15, wavelength:0.5, timeOffset:0 };
-	var meltAmount = 0.3;//var meltAmount = 0.08;
-	var modelHeight = 30;
-	var spreadAmount = 0.3; //	var spreadAmount = 1;
+	var meltAmount = 0.08;
+	var modelHeight = 10;
+	var spreadAmount = 1;
 	var poolThickness = 0.6;
 	var outwardSpeed = .06;
 	var pushType = "Normals";
 	var noiseAmplitude = .1;
 	var noiseFrequency = .1;
 	var noiseOffset = 1;
-	var bbox = new THREE.Box3(new THREE.Vector3( 80, 80, 80 ), new THREE.Vector3( -20, -20, -20));
+	var bbox = new THREE.Box3(new THREE.Vector3( 0, 0, 0 ), new THREE.Vector3( 5, 5, 5));
 	
 
 	var vertDist = bbox.max.y - bbox.min.y;
